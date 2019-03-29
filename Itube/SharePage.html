@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Share Page | Infinity Software Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="Scripts.js"></script>
+
+  <style>
+   #Loginbtn
+   {
+    background-color: #1a6df2; 
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-right: : 50%;
+  border-radius: 4px;
+
+}   
+#HideTag
+{
+  display: none;
+}
+  </style>
+}
+</head>
+<body>
+ 
+ <div class="container">
+   <div class="row">
+     <div class="col-md-lg-10 sm-12">
+       <center>
+         <div class="panel panel-default" style="width: 40%; margin-top: 150px;">
+            <div class="panel-heading"><span style="margin-right: 400px;"><label>Share Page</label></div>
+            <div class="panel-body">
+              <form>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fi-play-video">
+                  </i></span>
+                  <input id="email" type="text" class="form-control" name="Video_title" placeholder="Video title" style="width: 70%;"><button class="input-group-addon" style="float: left; height: 33px; width: 40px;" onclick="document.getElementById('HideTag').style.display = 'block'"><i class="fa fa-share-alt"></i></button>
+                  
+                </div><br>
+                <div id="HideTag" style="display: none;">
+                  <div>
+                    <div class="input-group" style="width: 70%; float: left;">
+                      <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                      <input id="email" type="text" class="form-control" name="Email" placeholder="Email">
+                    </div><br>     
+                    <div class="input-group" style="width: 30%; float: right;">
+                      <button type="button" class="btn btn-primary" style="float: right;">Send</button>
+                    </div>               
+                  </div>
+                  <div class="input-group" style="width: 100%; float: left;">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+                    <input id="email" type="number" class="form-control" name="Duration" placeholder="" id="number">
+                    <span class="input-group-addon"><i class="fa fa-plus-circle" id="increase" onclick="increaseValue()" style="pointer-events: none;"></i></span>
+                    <span class="input-group-addon"><i class="fa fa-minus-circle" id="decrese" onclick="decreseValue()"></i></span>
+                  </div><br>    
+                </div><br><br>
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                  <p></p>
+                </div>
+              </form>
+          </div>
+       </center>
+     </div>
+   </div>
+ </div>
+
+</body>
+</html>
+
+                
