@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login | Infinity Software Solutions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <style>
+   #Loginbtn
+   {
+    background-color: #1a6df2; 
+  border: none;
+  color: white;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-right: : 50%;
+  border-radius: 4px;
+}   }
+  </style>
+</head>
+<body>
+ 
+ <div class="container">
+   <div class="row">
+     <div class="col-md-lg-10 sm-12">
+       <center>
+         <div class="panel panel-default" style="width: 40%; margin-top: 150px;">
+            <div class="panel-heading"><span style="margin-right: 400px;"><label>Login</label></span></div>
+            <div class="panel-body">
+              <form method="post" action="{{ url_for('LoginValidation') }}">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                </div><br>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                  <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <div class="input-group">
+                  <input type="submit" name="login" class="form-control" value="Login" id="Loginbtn"> 
+                </div>
+                <div class="input-group">
+                  <a href="signup"><label class=><h4>Signup</h4></label></a>
+                </div>
+              </form>
+          </div>
+       </center>
+     </div>
+   </div>
+ </div>
+
+</body>
+</html>
